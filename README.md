@@ -41,6 +41,9 @@ This project is a Java console application that expands the original dealership 
 
 ```java
 if (contract instanceof SalesContract) {
-    SalesContract sc = (SalesContract) contract;
+    SalesContract salesContract = (SalesContract) contract;
     line = String.format("SALE|%s|%s|...|%.2f", sc.getCustomerName(), sc.getContractDate(), ...);
 }
+```
+## 💡 Why it's interesting
+This code uses instanceof to check the contract type and cast it appropriately. It then formats the contract data for saving, showing how polymorphism and inheritance work together with file writing logic.
