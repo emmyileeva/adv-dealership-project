@@ -3,13 +3,13 @@ package com.yearup.dealership.model;
 public abstract class Contract {
     private String customerName;
     private String customerEmail;
-    private String vehicleSold;
+    private Vehicle vehicle;
     private String contractDate;
 
-    public Contract(String customerName, String customerEmail, String vehicleSold, String contractDate) {
+    public Contract(String customerName, String customerEmail, Vehicle vehicle, String contractDate) {
         this.customerName = customerName;
         this.customerEmail = customerEmail;
-        this.vehicleSold = vehicleSold;
+        this.vehicle = vehicle;
         this.contractDate = contractDate;
     }
 
@@ -29,12 +29,8 @@ public abstract class Contract {
         this.customerEmail = customerEmail;
     }
 
-    public String getVehicleSold() {
-        return vehicleSold;
-    }
-
-    public void setVehicleSold(String vehicleSold) {
-        this.vehicleSold = vehicleSold;
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 
     public String getContractDate() {
