@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f7b7d0-3543-473d-8fbf-91a2df20f6a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/data/DealershipFileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/main/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/model/Dealership.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/ui/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/model/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/model/LeaseContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/model/SalesContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
