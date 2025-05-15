@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f7b7d0-3543-473d-8fbf-91a2df20f6a2" name="Changes" comment="Add ContractDataManager with logic to save Sales and Lease contracts to file">
-      <change afterPath="$PROJECT_DIR$/contracts.csv" afterDir="false" />
+    <list default="true" id="c1f7b7d0-3543-473d-8fbf-91a2df20f6a2" name="Changes" comment="Add contract processing to UI and save contract data to contracts.csv">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/ui/AdminUserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inventory.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/model/LeaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/model/LeaseContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/model/SalesContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/model/SalesContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/data/ContractDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/data/ContractDataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/ui/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yearup/dealership/ui/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,12 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1747337135215</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add contract processing to UI and save contract data to contracts.csv">
+      <option name="closed" value="true" />
+      <created>1747342483781</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747342483781</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Contract, SalesContract, and LeaseContract with some pricing logic" />
     <MESSAGE value="Add ContractDataManager with logic to save Sales and Lease contracts to file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ContractDataManager with logic to save Sales and Lease contracts to file" />
+    <MESSAGE value="Add contract processing to UI and save contract data to contracts.csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add contract processing to UI and save contract data to contracts.csv" />
   </component>
 </project>

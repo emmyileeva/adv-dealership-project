@@ -34,6 +34,7 @@ public class UserInterface {
             System.out.println("8. Add a vehicle");
             System.out.println("9. Remove a vehicle");
             System.out.println("10. Sell or lease a vehicle");
+            System.out.println("11. Admin Panel");
             System.out.println("Type 'exit' to quit.");
 
             choice = scanner.nextLine();
@@ -68,6 +69,9 @@ public class UserInterface {
                     break;
                 case "10":
                     processContractRequest();
+                    break;
+                case "11":
+                    processAdminPanelRequest();
                     break;
                 default:
                     if (!choice.equals("exit")) {
@@ -256,5 +260,17 @@ public class UserInterface {
         fileManager.saveDealership(dealership);
 
         System.out.println("Vehicle removed and contract saved.");
+    }
+
+    private void processAdminPanelRequest() {
+        System.out.println("Enter the admin password:");
+        String password = scanner.nextLine();
+
+        if (password.equals("admin")) {
+            AdminUserInterface adminUI = new AdminUserInterface();
+            adminUI.displayAdminMenu();
+        } else {
+            System.out.println("Invalid password.");
+        }
     }
 }

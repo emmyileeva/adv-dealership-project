@@ -2,9 +2,9 @@ package com.yearup.dealership.data;
 
 import com.yearup.dealership.model.*;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContractDataManager {
 
@@ -64,6 +64,52 @@ public class ContractDataManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<Contract> getAllContracts() {
+        List<Contract> contracts = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader("contracts.csv"))) {
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split("\\|");
+
+                String contractType = parts[0];
+                String contractDate = parts[1];
+                String customerName = parts[2];
+                String customerEmail = parts[3];
+
+                int vin = Integer.parseInt(parts[4]);
+                int year = Integer.parseInt(parts[5]);
+                String make = parts[6];
+                String model = parts[7];
+                String vehicleType = parts[8];
+                String color = parts[9];
+                int odometer = Integer.parseInt(parts[10]);
+                double price = Double.parseDouble(parts[11]);
+
+                Vehicle vehicle = new Vehicle(vin, year, make, model, vehicleType, color, odometer, price);
+
+                if (contractType.equals("SALE")) {
+                    boolean isFinanced = parts[16].equalsIgnoreCase("YES");
+                    SalesContract salesContract = new SalesContract(customerName, customerEmail, vehicle, contractDate, price, isFinanced);
+                    contracts.add(salesContract);
+                } else if (contractType.equals("LEASE")) {
+                    LeaseContract leaseContract = new LeaseContract(customerName, customerEmail, vehicle, contractDate, price);
+                    contracts.add(leaseContract);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return contracts;
+    }
+
+    public List<Contract> getLast10Contracts() {
+        List<Contract> contracts = getAllContracts();
+        int startIndex = Math.max(0, contracts.size() - 10);
+        return contracts.subList(startIndex, contracts.size());
     }
 }
 
