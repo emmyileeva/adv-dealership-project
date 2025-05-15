@@ -42,7 +42,7 @@ This project is a Java console application that expands the original dealership 
 ```java
 if (contract instanceof SalesContract) {
     SalesContract salesContract = (SalesContract) contract;
-    line = String.format("SALE|%s|%s|...|%.2f", sc.getCustomerName(), sc.getContractDate(), ...);
+    line = String.format("SALE|%s|%s|...|%.2f", salesContract.getCustomerName(), salesContract.getContractDate(), ...);
 }
 ```
 ## 💡 Why it's interesting
