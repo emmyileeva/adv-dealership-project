@@ -47,3 +47,6 @@ if (contract instanceof SalesContract) {
 ```
 ## 💡 Why it's interesting
 This code uses instanceof to check the contract type and cast it appropriately. It then formats the contract data for saving, showing how polymorphism and inheritance work together with file writing logic.
+
+> 💾 Looking for a database-backed version?  
+Check out my related [SQL Dealership Database Workshop](https://github.com/emmyileeva/CarDealershipDatabase) where I modeled this project's data layer using Microsoft SQL Server and complex queries.
